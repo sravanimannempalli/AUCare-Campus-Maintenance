@@ -67,7 +67,7 @@ public class SecurityConfig {
 
                 .requestMatchers("/api/auth/**").authenticated()
                 .requestMatchers("/api/complaints/**").authenticated()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
             );
 
         return http.build();
