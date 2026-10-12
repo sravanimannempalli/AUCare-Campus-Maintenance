@@ -1,0 +1,22 @@
+
+# Java / Maven
+**/target/
+*.class
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local application configuration
+**/application-local.properties
+# Keep local database credentials private
+**/src/main/resources/application.properties
